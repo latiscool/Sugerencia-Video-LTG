@@ -6,8 +6,7 @@ const patronAutoEjecutable = (() => {
   //Variable  para el video
   const data = (url, id) => {
     id.setAttribute('src', url);
-    // id.style.display = 'block';
-  };
+   };
 
   //Retornado data
   return {
