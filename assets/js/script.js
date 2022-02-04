@@ -6,11 +6,13 @@ const patronAutoEjecutable = (() => {
   //Variable  para el video
   const data = (url, id) => {
     id.setAttribute('src', url);
-    id.style.display = 'block';
+    // id.style.display = 'block';
   };
 
   //Retornado data
-  return { mostrarInfo: (url, id) => data(url, id) };
+  return {
+    mostrarInfo: (url, id) => data(url, id),
+  };
 })();
 
 //Creando las clases aplicando Closure ES6
@@ -65,7 +67,7 @@ let musicaVideo = new Reproductor(
   musica
 );
 let peliculasVideo = new Reproductor(
-  'https://www.youtube.com/embed/ctcQ6b037k0',
+  'https://www.youtube.com/embed/UoSSbmD9vqc',
   peliculas
 );
 let seriesVideo = new Reproductor(
@@ -80,5 +82,5 @@ peliculasVideo.playMultimedia();
 seriesVideo.playMultimedia();
 
 musicaVideo.setInicio(60);
-// peliculasVideo.setInicio(60);
-// seriesVideo.setInicio(60);
+peliculasVideo.setInicio(60);
+seriesVideo.setInicio(60);
