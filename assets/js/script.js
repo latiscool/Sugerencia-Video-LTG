@@ -8,7 +8,7 @@ const patronAutoEjecutable = (() => {
     id.setAttribute('src', url);
    };
 
-  //Retornado data
+  //Retornando data
   return {
     mostrarInfo: (url, id) => data(url, id),
   };
@@ -28,7 +28,7 @@ class Multimedia {
   get url() {
     return this.getUrl();
   }
-  //Metodo que retorb solo un mensaje
+  //Metodo que retorno solo un mensaje
   setInicio() {
     return 'Este método es para realizar un cambio en la URL del video';
   }
@@ -58,7 +58,7 @@ class Reproductor extends Multimedia {
   }
 }
 
-//Instanciando Muscia, Video y Serie de la clase Reprocuctor
+//Instanciando Muscia, Peliculas y Serie de la clase Reprocuctor
 //Dando el argumento la url del video y y el id(del html)
 
 let musicaVideo = new Reproductor(
